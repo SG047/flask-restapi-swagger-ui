@@ -135,3 +135,5 @@ def swagger_docs(path=None):
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000)
+    #const port = Process.env.PORT || 5000 
+    app.listen(process.env.PORT || 5000)
